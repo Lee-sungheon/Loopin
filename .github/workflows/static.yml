@@ -35,13 +35,9 @@ jobs:
         with:
           node-version: 20
       - name: Install dependencies
-        run: |
-          cd Loopin
-          yarn install
+        run: yarn install
       - name: Build Vue project
-        run: |
-          cd Loopin
-          yarn install
+        run: yarn build
         
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
