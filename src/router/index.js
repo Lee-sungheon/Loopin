@@ -80,13 +80,13 @@ const router = createRouter({
     {
       path: "/lounge/write",
       name: "loungeWriteView",
-      component: () => import("@/views/LoungeWriteView.vue"),
+      component: () => import("@/views/loungeWriteView.vue"),
       meta: { layout: "CenteredHeader" },
     },
     {
       path: "/lounge/write/:id?",
       name: "loungeWriteView",
-      component: () => import("@/views/LoungeWriteView.vue"),
+      component: () => import("@/views/loungeWriteView.vue"),
       meta: { layout: "CenteredHeader", requireAuth: true },
     },
     {
